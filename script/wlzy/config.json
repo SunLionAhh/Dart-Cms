@@ -1,0 +1,22 @@
+{
+	"file": "app.js",
+	"name": "卧龙资源网",
+	"note": "卧龙资源，采集接口速度稍慢与123ku资源网。资源比较全面，稳定。推荐采集。",
+	"alias": "wlzy",
+	"state": false,
+	"timeout": 7200000,
+	"pid": 0,
+	"runTime": "",
+	"options": {
+		"h": {
+			"key": "采集周期",
+			"type": "number",
+			"val": 0
+		},
+		"domain": {
+			"key": "采集接口",
+			"type": "string",
+			"val": "http://cj.wlzy.tv/inc/api_mac.php"
+		}
+	}
+}
