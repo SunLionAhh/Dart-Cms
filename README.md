@@ -17,6 +17,10 @@
     <img src="https://github.com/abcd498936590/pic/blob/master/img/dart-cms-6.png?raw=true" />
 </p>
 
+## Dart-Cms-Manage
+
+[后台管理系统部分(使用vue全家桶)](https://github.com/abcd498936590/Dart-Cms-Manage)
+
 ## 懒人部署
 
 [手拉手开发nodejs电影cms系统③：宝塔面板懒人部署](https://segmentfault.com/a/1190000022219771)
