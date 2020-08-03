@@ -1,10 +1,10 @@
 # 这是一套nodejs+mongodb实现的电影网站管理系统
 > 技术栈 vue + vue-router + nodejs + koa2 + mongodb + nginx
+> 整个系统需要环境 nginx（分发请求给nodejs，http2，ssl），nodejs（数据处理），mongodb（数据存储
 
 ## 警告
 > 本项目仅供学习参考，请勿用于任何商业、非法用途。由此带来的法律责任，本人概不承担！
 
-整个系统需要环境 nginx（分发请求给nodejs，http2，ssl），nodejs（数据处理），mongodb（数据存储）
 
 ## 预览
 <p align="center">
