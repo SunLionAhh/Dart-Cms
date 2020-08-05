@@ -202,10 +202,16 @@ let AddVideo = async (ctx, next) => {
 		// 分类
 		info["video_type"] = new ObjectID(info["video_type"]);
 		// 关联文章
+		let news_id_arr = [];
 		let ns = info.news_id;
 		for(let i=0; i<ns.length; i++){
-			ns[i] = new ObjectID(ns[i]);
+			// 防止ID不对称
+			if(typeof ns[i] === 'string' && ns[i].length === 24){
+				news_id_arr.push(new ObjectID(ns[i]));
+			}
 		}
+		// 筛选后的news_id都是正规的24位ObjectID
+		info.news_id = news_id_arr;
 
 		let videoResult = await videoInfoColl.insertOne(info);
 
@@ -246,10 +252,16 @@ let UpdateCurVideo = async (ctx, next) => {
 		// 分类
 		info["video_type"] = new ObjectID(info["video_type"]);
 		// 关联文章
+		let news_id_arr = [];
 		let ns = info.news_id;
 		for(let i=0; i<ns.length; i++){
-			ns[i] = new ObjectID(ns[i]);
+			// 防止ID不对称
+			if(typeof ns[i] === 'string' && ns[i].length === 24){
+				news_id_arr.push(new ObjectID(ns[i]));
+			}
 		}
+		// 筛选后的news_id都是正规的24位ObjectID
+		info.news_id = news_id_arr;
 
 		let queue = [],
 		promise;
