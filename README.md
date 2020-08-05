@@ -84,7 +84,7 @@ server {
 }
 ```
 
-## 后台登录系统默认账号密码
+## 系统登录
 
 管理系统地址 http://localhost:9999/manage/index.html
 用户名: root      密码: 123456
